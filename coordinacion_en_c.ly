@@ -11,15 +11,8 @@ RH = #rightHandFinger
 
 %--- Introducción de las notas ---%
 notas = \relative c' {
-	<c g' >8 g' c, g' <c, g' >8 g' c, g'|
-	<e g> g e g <e g> g e g |
-	\bar "|."
-}
-
-
-notasdos = \relative c' {
-	<c g' >8 g' c, g' <c, g' >8 g' c, g'|
-	<e g> g e g <e g> g e g |
+	<c g'\4 >8 g'\4 c, g'\4 <d g\4> g\4 d g\4 |
+	<g\4 e\3> g\4 e\3 g\4 <g\4 d> g\4 d g\4 |
 	\bar "|."
 }
 
@@ -29,14 +22,5 @@ notasdos = \relative c' {
 	<<
 		\new Staff \notas
 		\new TabStaff \notas
-	>>
-}
-
-%--- Partitura ---%
-\score {
-	\new StaffGroup	
-	<<
-		\new Staff \notasdos
-		\new TabStaff \notasdos
 	>>
 }
