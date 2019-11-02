@@ -11,10 +11,10 @@ RH = #rightHandFinger
 
 %--- Introducción de las notas ---%
 notas = \relative c' {
+	cis4 cis d dis |
+	c4 c c c |
 	c8_\RH #1 e_\RH #2 g,_\RH #1 c'_\RH #3 c, e g, c' |
 	c, e gis, c' c, e gis, c' |
-	c, e a, c' c, e a, c' |
-	c, e bes c' c, e bes4 |
 	\bar "|."
 }
 
@@ -24,9 +24,6 @@ notas = \relative c' {
 \score {
 	\new StaffGroup	
 	<<
-			\chords {
-			c1| c1:aug | c1:6 | c1:7 |
-		}
 		\new Staff \notas
 		\new TabStaff \notas
 	>>
