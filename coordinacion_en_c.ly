@@ -5,18 +5,21 @@ RH = #rightHandFinger
 \layout{
 	\context {
 		\TabStaff
-		stringTunings = \stringTuning <g c' e' a'>
+		stringTunings = \stringTuning <g' c' e' a'>
 	}
 }
 
 %--- Introducción de las notas ---%
 notas = \relative c' {
-	<g_\RH #1 c_\RH #2 >8
-	g_\RH #1
-	c_\RH #2
-	g_\RH #1
-	<g d'> g d' g, |
-	<g e'\3>8 g e'\3 g, <g d'> g d' g, |
+	<c g' >8 g' c, g' <c, g' >8 g' c, g'|
+	<e g> g e g <e g> g e g |
+	\bar "|."
+}
+
+
+notasdos = \relative c' {
+	<c g' >8 g' c, g' <c, g' >8 g' c, g'|
+	<e g> g e g <e g> g e g |
 	\bar "|."
 }
 
@@ -26,5 +29,14 @@ notas = \relative c' {
 	<<
 		\new Staff \notas
 		\new TabStaff \notas
+	>>
+}
+
+%--- Partitura ---%
+\score {
+	\new StaffGroup	
+	<<
+		\new Staff \notasdos
+		\new TabStaff \notasdos
 	>>
 }
