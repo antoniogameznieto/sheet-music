@@ -4,7 +4,7 @@
 %--- Introducción de las notas ---%
 
 hi_g = \relative c'' {
-	\key d \major
+	\key cis \minor
 	\partial 4.
 
 	cis8 \tuplet 3/2 { cis d dis } |
@@ -15,7 +15,7 @@ hi_g = \relative c'' {
 }
 
 low_g = \relative c' {
-	\key d \major
+	\key cis \minor
 	\partial 4.
 
 	cis8 \tuplet 3/2 { cis d dis } |
