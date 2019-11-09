@@ -16,12 +16,8 @@ notas = \relative c' {
 \time 6/8
 	<c g>4 g8 c8 g4 |
 	<d' g,>4 g,8 d'8 g,4 |
-	<c g>4 g8 c g4 |
-	<c g>4 g8 c g4 |
-	<c g>4 g8 c g4 |
-	<c g>4 g8 c g4 |
-	<c g>4 g8 c g4 |
-	<c g>4 g8 c g4 |
+	<e'\3 g,>4 g,8 e'\3 g,4 |
+	<d' g,>4 g,8 d'8 g,4 |
 	\bar "|."
 }
 
