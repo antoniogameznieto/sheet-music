@@ -21,11 +21,33 @@ notas = \relative c' {
 	\bar "|."
 }
 
+
+%--- Introducción de las notas ---%
+notasdos = \relative c' {
+
+\numericTimeSignature
+\time 6/8
+	<e g,>4 g,8 e'8 g,4 |
+	<f' g,>4 g,8 f'8 g,4 |
+	<g' g,>4 g,8 g'8 g,4 |
+	<f' g,>4 g,8 f'8 g,4 |
+	\bar "|."
+}
+
 %--- Partitura ---%
 \score {
 	\new StaffGroup	
 	<<
 		\new Staff \notas
 		\new TabStaff \notas
+	>>
+}
+
+%--- Partitura ---%
+\score {
+	\new StaffGroup	
+	<<
+		\new Staff \notasdos
+		\new TabStaff \notasdos
 	>>
 }
