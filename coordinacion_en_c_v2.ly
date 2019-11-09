@@ -27,10 +27,10 @@ notasdos = \relative c' {
 
 \numericTimeSignature
 \time 6/8
-	<e g,>4 g,8 e'8 g,4 |
-	<f' g,>4 g,8 f'8 g,4 |
-	<g' g,>4 g,8 g'8 g,4 |
-	<f' g,>4 g,8 f'8 g,4 |
+	<e\2 g\4>4 <g\4>8 <e>8 <g\4>4 |
+	<f\2 g\4>4 <g\4>8 <f>8 <g\4>4 |
+	<g\2 g\4>4 <g\4>8 <g>8 <g\4>4 |
+	<f\2 g\4>4 <g\4>8 <f>8 <g\4>4 |
 	\bar "|."
 }
 
