@@ -29,11 +29,6 @@ RH = #rightHandFinger
 
 %--- Introducción de las notas ---%
 
-one = \relative c' {
-	c8 d e f g a b c |
-	c b a g f e d c |
-	\bar ":|." 
-}
 
 two = \relative c' {
 	\tuplet 3/2 { c e c' }
@@ -48,27 +43,10 @@ two = \relative c' {
 	\bar ":|." 
 }
 
-three = \relative c' {
-	c8_\RH #1 
-	e_\RH #2
-	c'_\RH #3 
-	e,_\RH #2
-	c e c' e, |
-	c8 f a f c f a f |
-	\bar "|."
-}
 
 
 %--- Partitura ---%
 
-\markup "Escala de C Mayor"
-\score {
-	\new StaffGroup	
-	<<
-		\new Staff \one
-		\new TabStaff \one
-	>>
-}
 
 \markup "FingerStyle (tresillo)"
 \score {
@@ -79,17 +57,5 @@ three = \relative c' {
 		}
 		\new Staff \two
 		\new TabStaff \two
-	>>
-}
-
-\markup "FingerStyle Ej:1"
-\score {
-	\new StaffGroup	
-	<<
-		\chords {
-			c1 | f |
-		}
-		\new Staff \three
-		\new TabStaff \three
 	>>
 }
