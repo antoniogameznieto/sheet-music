@@ -9,45 +9,33 @@ RH = #rightHandFinger
 	}
 }
 
+
+
 %--- Introducción de las notas ---%
 notas = \relative c' {
 
 \numericTimeSignature
-\time 6/8
-	<c g>4 g8 c8 g4 |
-	<d' g,>4 g,8 d'8 g,4 |
-	<e'\3 g,>4 g,8 e'\3 g,4 |
-	<d' g,>4 g,8 d'8 g,4 |
+\key f \major
+\time 4/4
+	<f a>8 c <f a> c 
+	<f a> d <f a> d |
+	<f bes> d <f bes> d 
+	<e c'> c <e bes'> c |
+	\bar ":|."
+	<c f a>1
 	\bar "|."
 }
 
-
-%--- Introducción de las notas ---%
-notasdos = \relative c' {
-
-\numericTimeSignature
-\time 6/8
-	<e g,>4 g,8 e'8 g,4 |
-	<f' g,>4 g,8 f'8 g,4 |
-	<g' g,>4 g,8 g'8 g,4 |
-	<f' g,>4 g,8 f'8 g,4 |
-	\bar "|."
+acordes = \chordmode {
+    f2 d:m | bes c4 c:7 | f1 
 }
 
 %--- Partitura ---%
 \score {
 	\new StaffGroup	
 	<<
+		\new ChordNames \acordes
 		\new Staff \notas
 		\new TabStaff \notas
-	>>
-}
-
-%--- Partitura ---%
-\score {
-	\new StaffGroup	
-	<<
-		\new Staff \notasdos
-		\new TabStaff \notasdos
 	>>
 }
