@@ -35,15 +35,15 @@ notas = \relative c' {
 	\bar "|."	
 }
 
-% acordes = \chordmode {
-%    f2 d:m | bes c4 c:7 | f1 
-% }
+acordes = \chordmode {
+	r1 f g c:1.5 a:m a:m f g c f g c:1.5 a:m f g c
+ }
 
 %--- Partitura ---%
 \score {
 	\new StaffGroup	
 	<<
-		% \new ChordNames \acordes
+	    \new ChordNames \acordes
 		\new Staff \notas
 		\new TabStaff \notas
 	>>
