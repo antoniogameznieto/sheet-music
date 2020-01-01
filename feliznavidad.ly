@@ -36,7 +36,8 @@ notas = \relative c' {
 }
 
 acordes = \chordmode {
-	r1 f g c:1.5 a:m a:m f g c f g c:1.5 a:m f g c
+	\powerChords
+	r1 f g c:1.5 a:m f g c r f g c:1.5 a:m f g c
  }
 
 %--- Partitura ---%
