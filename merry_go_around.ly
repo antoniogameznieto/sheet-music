@@ -56,6 +56,19 @@ tres = \relative c' {
 	<c\3 e\2 g\4 c>1
 	\bar "|."
 }
+
+acordesuno = \chordmode {
+    c2 a:m f g:7
+}
+
+acordesdos = \chordmode {
+	c2 c:9 c c:maj7 f g:7
+
+}
+
+acordestres = \chordmode {
+    c2 a:m f g:7 c1
+}
 %--- Partitura ---%
 \score {
 	\new StaffGroup	
