@@ -3,7 +3,7 @@
 \layout{
 	\context {
 		\TabStaff
-		stringTunings = \stringTuning <g c' e' a'>
+		stringTunings = \stringTuning <g' c' e' a'>
 	}
 }
 
@@ -26,6 +26,8 @@ uno = \relative c' {
 	\tuplet 3/2 { b' f d } |
 	\bar ":|." 
 }
+
+
 dos = \relative c' {
 	\tuplet 3/2 { e' e, c }
 	\tuplet 3/2 { e' e, c }
@@ -41,7 +43,19 @@ dos = \relative c' {
 	\tuplet 3/2 { b' f d } |
 	\bar ":|." 
 }
-
+tres = \relative c' {
+	\tuplet 3/2 { c' e, c }
+	\tuplet 3/2 { c' e, c }
+	\tuplet 3/2 { a' e c }
+	\tuplet 3/2 { a' e c } |
+	\tuplet 3/2 { a' f c }
+	\tuplet 3/2 { a' f c }
+	\tuplet 3/2 { b' f d }
+	\tuplet 3/2 { b' f d } |
+	\bar ":|." 
+	<c\3 e\2 g\4 c>1
+	\bar "|."
+}
 %--- Partitura ---%
 \score {
 	\new StaffGroup	
@@ -62,7 +76,7 @@ dos = \relative c' {
 \score {
 	\new StaffGroup	
 	<<
-		\new Staff \uno
-		\new TabStaff \uno
+		\new Staff \tres
+		\new TabStaff \tres
 	>>
 }
