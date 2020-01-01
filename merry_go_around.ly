@@ -60,6 +60,7 @@ tres = \relative c' {
 \score {
 	\new StaffGroup	
 	<<
+		\new ChordNames \acordesuno
 		\new Staff \uno
 		\new TabStaff \uno
 	>>
@@ -68,6 +69,7 @@ tres = \relative c' {
 \score {
 	\new StaffGroup	
 	<<
+		\new ChordNames \acordesdos
 		\new Staff \dos
 		\new TabStaff \dos
 	>>
@@ -76,6 +78,7 @@ tres = \relative c' {
 \score {
 	\new StaffGroup	
 	<<
+		\new ChordNames \acordestres
 		\new Staff \tres
 		\new TabStaff \tres
 	>>
