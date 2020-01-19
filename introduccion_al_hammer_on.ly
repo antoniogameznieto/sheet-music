@@ -17,17 +17,12 @@ notas = \relative c' {
 \numericTimeSignature
 \key f \major
 \time 4/4
-	<f a>8 c <f a> c 
-	<f a> d <f a> d |
-	<f bes> d <f bes> d 
-	<e c'> c <e bes'> c |
-	\bar ":|."
-	<c f a>1
+	c8 d e g a c c c |
 	\bar "|."
 }
 
 acordes = \chordmode {
-    f2 d:m | bes c4 c:7 | f1 
+     
 }
 
 %--- Partitura ---%
