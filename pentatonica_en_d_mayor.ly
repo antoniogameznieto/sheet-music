@@ -21,7 +21,8 @@ notas = \relative c' {
 	d4 e\3 fis a\2 |
 	b4 d2. |
 	d4 b a\2 fis |
-	e\3 d2. 
+	e\3 d2. |
+	\bar "|." |
 }
 
 %--- Partitura ---%
