@@ -11,9 +11,7 @@
 
 
 uno = \relative c' {
-
 \key c \major
-
 \numericTimeSignature
 \time 4/4
 	g8\4 g\4 g' g f f \tuplet 3/2 { d c d}
@@ -21,12 +19,8 @@ uno = \relative c' {
 	\bar ":|." 
 }
 
-
-
 dos = \relative c' {
-
 \key c \major
-
 \numericTimeSignature
 \time 4/4
 	c8 c c' c ais ais \tuplet 3/2 { g f g} | 
@@ -34,6 +28,24 @@ dos = \relative c' {
 	\bar ":|." 
 }
 
+
+tres = \relative c' {
+\key c \major
+\numericTimeSignature
+\time 4/4
+	d d d' d c c \tuplet 3/2 { a\2 g a\2} |
+	c,8 c c' c ais ais \tuplet 3/2 { g f g} | 
+	\bar ":|." 
+}
+
+cuatro = \relative c' {
+\key c \major
+\numericTimeSignature
+\time 4/4
+	d d d' d c c \tuplet 3/2 { a\2 g a\2} |
+	c,8 c c' c ais ais \tuplet 3/2 { g f g} | 
+	\bar ":|." 
+}
 %--- Partitura ---%
 \score {
 	\new StaffGroup	
@@ -51,3 +63,17 @@ dos = \relative c' {
 	>>
 }
 
+\score {
+	\new StaffGroup	
+	<<
+		\new Staff \tres
+		\new TabStaff \tres
+	>>
+}
+\score {
+	\new StaffGroup	
+	<<
+		\new Staff \cuatro
+		\new TabStaff \cuatro
+	>>
+}
