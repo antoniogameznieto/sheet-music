@@ -14,27 +14,21 @@ RH = #rightHandFinger
 %--- Introducción de las notas ---%
 notas = \relative c' {
 
+\numericTimeSignature 
+\key g \major
 \numericTimeSignature
-\key f \major
 \time 4/4
-	<f a>8 c <f a> c 
-	<f a> d <f a> d |
-	<f bes> d <f bes> d 
-	<e c'> c <e bes'> c |
-	\bar ":|."
-	<c f a>1
-	\bar "|."
-}
-
-acordes = \chordmode {
-    f2 d:m | bes c4 c:7 | f1 
+	d4 e\3 fis a\2 |
+	b4 d2. |
+	d4 b a\2 fis |
+	e\3 d2. 
 }
 
 %--- Partitura ---%
 \score {
 	\new StaffGroup	
 	<<
-		\new ChordNames \acordes
+		
 		\new Staff \notas
 		\new TabStaff \notas
 	>>
