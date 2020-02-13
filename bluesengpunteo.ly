@@ -29,7 +29,6 @@ dos = \relative c' {
 \numericTimeSignature
 \time 4/4
 	c8 c c' c ais ais \tuplet 3/2 { g f g} | 
-	g8\4 g\4 g' g f f \tuplet 3/2 { d c d} 
 	\bar ":|." 
 }
 
