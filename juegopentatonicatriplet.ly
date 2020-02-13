@@ -9,90 +9,35 @@
 
 %--- Introducción de las notas ---%
 
-one = \relative c' {
-	c8 d e f g a b c |
-	c b a g f e d c |
-	\bar ":|." 
-}
 
 uno = \relative c' {
-	\tuplet 3/2 { c' e, c }
-	\tuplet 3/2 { c' e, c }
-	\tuplet 3/2 { a' e c }
-	\tuplet 3/2 { a' e c } |
-	\tuplet 3/2 { a' f c }
-	\tuplet 3/2 { a' f c }
-	\tuplet 3/2 { b' f d }
-	\tuplet 3/2 { b' f d } |
+
+\key g \major
+
+\numericTimeSignature
+\time 4/4
+	\tuplet 3/2 { d8 e\3 fis\2 }
+	\tuplet 3/2 { e\3 fis\2 a\2 }
+	\tuplet 3/2 { fis\2 a\2 b\1 }
+	\tuplet 3/2 { a\2 b\1 d\1 } |
+	\tuplet 3/2 { d\1 b\1 a\2 }
+	\tuplet 3/2 { b\1 a\2 fis\2 }
+	\tuplet 3/2 { a\2 fis\2 e\3 }
+	\tuplet 3/2 { fis\2 e\3 d } |	
 	\bar ":|." 
 }
 
 
-dos = \relative c' {
-	\tuplet 3/2 { e' e, c }
-	\tuplet 3/2 { e' e, c }
-	\tuplet 3/2 { d' e, c }
-	\tuplet 3/2 { d' e, c } |
-	\tuplet 3/2 { c' e, c }
-	\tuplet 3/2 { c' e, c }
-	\tuplet 3/2 { b' e, c }
-	\tuplet 3/2 { b' e, c } |
-	\tuplet 3/2 { a' f c }
-	\tuplet 3/2 { a' f c }
-	\tuplet 3/2 { b' f d }
-	\tuplet 3/2 { b' f d } |
-	\bar ":|." 
-}
-tres = \relative c' {
-	\tuplet 3/2 { c' e, c }
-	\tuplet 3/2 { c' e, c }
-	\tuplet 3/2 { a' e c }
-	\tuplet 3/2 { a' e c } |
-	\tuplet 3/2 { a' f c }
-	\tuplet 3/2 { a' f c }
-	\tuplet 3/2 { b' f d }
-	\tuplet 3/2 { b' f d } |
-	\bar ":|." 
-	<c\3 e\2 g\4 c>1
-	\bar "|."
-}
 
-acordesuno = \chordmode {
-    c2 a:m f g:7
-}
 
-acordesdos = \chordmode {
-	c2 c:9 c c:maj7 f g:7
-
-}
-
-acordestres = \chordmode {
-    c2 a:m f g:7 c1
-}
 %--- Partitura ---%
 \score {
 	\new StaffGroup	
 	<<
-		\new ChordNames \acordesuno
 		\new Staff \uno
 		\new TabStaff \uno
 	>>
 }
 
-\score {
-	\new StaffGroup	
-	<<
-		\new ChordNames \acordesdos
-		\new Staff \dos
-		\new TabStaff \dos
-	>>
-}
 
-\score {
-	\new StaffGroup	
-	<<
-		\new ChordNames \acordestres
-		\new Staff \tres
-		\new TabStaff \tres
-	>>
-}
+
