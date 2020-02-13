@@ -3,7 +3,7 @@
 \layout{
 	\context {
 		\TabStaff
-		stringTunings = #ukulele-tuning
+		stringTunings = #tenor-ukulele-tuning
 	}
 }
 
@@ -16,13 +16,22 @@ uno = \relative c' {
 
 \numericTimeSignature
 \time 4/4
-	c8 (d) e4 g8 a r4 |
-	<c, e g\4 c> r4 r2
+	g8\4 g\4 g' g f f \tuplet 3/2 { d c d}
 	\bar ":|." 
 }
 
 
 
+dos = \relative c' {
+
+\key c \major
+
+\numericTimeSignature
+\time 4/4
+	c8 c c' c ais ais \tuplet 3/2 { g f g} | 
+	g8\4 g\4 g' g f f \tuplet 3/2 { d c d} 
+	\bar ":|." 
+}
 
 %--- Partitura ---%
 \score {
@@ -33,5 +42,11 @@ uno = \relative c' {
 	>>
 }
 
-
+\score {
+	\new StaffGroup	
+	<<
+		\new Staff \dos
+		\new TabStaff \dos
+	>>
+}
 
