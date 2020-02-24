@@ -18,48 +18,23 @@ uno = \relative c' {
   g,8\4 g\4 g' g f f \tuplet 3/2 { d c d} |
   g,8\4 g\4 g' g f f \tuplet 3/2 { d c d} |
   g,8\4 g\4 g' g f f \tuplet 3/2 { d c d} |
-	
 	\bar ":|." 
-}
-
-dos = \relative c' {
-\key c \major
-\numericTimeSignature
-\time 4/4
-	c8 c c' c ais ais \tuplet 3/2 { g f g}
+  c8 c c' c ais ais \tuplet 3/2 { g f g}
   \bar ":..:" 
 	g,8\4 g\4 g' g f f \tuplet 3/2 { d c d}
-	\bar ":|." 
-}
-
-
-tres = \relative c' {
-\key c \major
-\numericTimeSignature
-\time 4/4
-	d d d' d c c \tuplet 3/2 { a\2 g a\2} |
+	\bar ":|."
+  	d d d' d c c \tuplet 3/2 { a\2 g a\2} |
 	c,8 c c' c ais ais \tuplet 3/2 { g f g} | 
 	\bar ":|." 
-}
-
-cuatro = \relative c' {
-\key c \major
-\numericTimeSignature
-\time 4/4
-	g8\4 g\4 ais ais c c cis cis |
+  	g8\4 g\4 ais ais c c cis cis |
 	d d cis cis c c ais ais
 	\bar ":|." 
-}
-
-
-cinco = \relative c' {
-\key c \major
-\numericTimeSignature
-\time 4/4
-  <g d' f b>1\fermata |
+   <g, d' f b>1\fermata |
   <g c' dis a'>4 <g cis' e ais> <g d'' f b>2
 	\bar ":|." 
 }
+
+
 
 %--- Partitura ---%
 \score {
@@ -67,37 +42,5 @@ cinco = \relative c' {
 	<<
 		\new Staff \uno
 		\new TabStaff \uno
-	>>
-}
-
-\score {
-	\new StaffGroup	
-	<<
-		\new Staff \dos
-		\new TabStaff \dos
-	>>
-}
-
-\score {
-	\new StaffGroup	
-	<<
-		\new Staff \tres
-		\new TabStaff \tres
-	>>
-}
-
-\score {
-	\new StaffGroup	
-	<<
-		\new Staff \cuatro
-		\new TabStaff \cuatro
-	>>
-}
-
-\score {
-	\new StaffGroup	
-	<<
-		\new Staff \cinco
-		\new TabStaff \cinco
 	>>
 }
