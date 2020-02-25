@@ -1,42 +1,48 @@
 \version "2.18.2"
 
-\layout{
-	\context {
-		\TabStaff
-		stringTunings = #tenor-ukulele-tuning
-	}
-}
 
 %--- Introducción de las notas ---%
-uno = \relative c' {
-\key c \major
-\numericTimeSignature
-\time 4/4
-	g8\4 g\4 g' g f f \tuplet 3/2 { d c d} |
-	g,8\4 g\4 g' g f f \tuplet 3/2 { d c d} |
-	g,8\4 g\4 g' g f f \tuplet 3/2 { d c d} |
-	g,8\4 g\4 g' g f f \tuplet 3/2 { d c d} |
-	\bar ":|." 
-	c8 c c' c ais ais \tuplet 3/2 { g f g}
-  	\bar ":..:" 
-	g,8\4 g\4 g' g f f \tuplet 3/2 { d c d}
-	\bar ":|."
-  	d d d' d c c \tuplet 3/2 { a\2 g a\2} |
-	c,8 c c' c ais ais \tuplet 3/2 { g f g} | 
-	\bar ":|." 
-  	g,8\4 g\4 ais ais c c cis cis |
-	d d cis cis c c ais ais
-	\bar ":|." 
-   	<g d' f b>1\fermata |
-  	<g c' dis a'>4 <g cis' e ais> <g d'' f b>2
-	\bar ":|." 
+
+hi_g = \relative c'' {
+	\key d \major
+	\partial 4.
+
+	cis8 \tuplet 3/2 { cis d dis } |
+	\bar "||"
+	\acciaccatura dis \glissando e4. e8 d4 \tuplet 3/2 { d8 cis b} |
+	\acciaccatura cis \glissando d cis cis2 r4 |
+	\bar "|."
+}
+
+low_g = \relative c' {
+	\key d \major
+	\partial 4.
+
+	cis8 \tuplet 3/2 { cis d dis } |
+	\bar "||"
+	\acciaccatura dis \glissando e4.\3 e8\3 d4 \tuplet 3/2 { d8 cis b} |
+	\acciaccatura cis \glissando d cis cis2 r4 |
+	\bar "|."
 }
 
 %--- Partitura ---%
+
 \score {
-	\new StaffGroup	
+	\new StaffGroup
 	<<
-		\new Staff \uno
-		\new TabStaff \uno
+		\new Staff \hi_g
+		\new TabStaff \with {
+			stringTunings = #ukulele-tuning
+		} \hi_g
+	>>
+}
+
+\score {
+	\new StaffGroup
+	<<
+		\new Staff \low_g
+		\new TabStaff \with {
+			stringTunings = #tenor-ukulele-tuning
+		} \low_g
 	>>
 }
