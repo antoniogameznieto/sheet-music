@@ -9,26 +9,13 @@
 
 %--- Introducción de las notas ---%
 uno = \relative c' {
-\key c \major
+\key d \major
 \numericTimeSignature
 \time 4/4
-	g8\4 g\4 g' g f f \tuplet 3/2 { d c d} |
-	g,8\4 g\4 g' g f f \tuplet 3/2 { d c d} |
-	g,8\4 g\4 g' g f f \tuplet 3/2 { d c d} |
-	g,8\4 g\4 g' g f f \tuplet 3/2 { d c d} |
-	\bar ":|." 
-	c8 c c' c ais ais \tuplet 3/2 { g f g}
-  	\bar ":..:" 
-	g,8\4 g\4 g' g f f \tuplet 3/2 { d c d}
-	\bar ":|."
-  	d d d' d c c \tuplet 3/2 { a\2 g a\2} |
-	c,8 c c' c ais ais \tuplet 3/2 { g f g} | 
-	\bar ":|." 
-  	g,8\4 g\4 ais ais c c cis cis |
-	d d cis cis c c ais ais
-	\bar ":|." 
-   	<g d' f b>1\fermata |
-  	<g c' dis a'>4 <g cis' e ais> <g d'' f b>2
+	r8 fis g fis a a g fis~ | 
+	fis fis g fis d' d c b |
+	r fis g fis a a g fis~ |
+	fis fis g f fis' fis e d
 	\bar ":|." 
 }
 
