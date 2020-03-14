@@ -9,13 +9,13 @@
 
 %--- Introducción de las notas ---%
 uno = \relative c' {
-\key f \major
+\key c \major
 \numericTimeSignature
 \time 4/4
-	a'8\2 a\2 a\2 g~ g\2 a16\2 bes\2 a8\2 g\2 |
-	a8\2 a\2 a\2 g~ g\2 a16\2 bes\2 a8\2 g\2 |
-	a8\2 a\2 a\2 g~ g\2 a16\2 bes\2 a8\2 g\2 |
-	a8\2 a\2 a\2 g~ g\2 a16\2 bes\2 a8\2 g\2 |
+	r4 r4 r8 g a b |
+	c2.\4 e4\3 |
+	c2 g'8. f8. e8 |
+	
 	\bar ":|." 
 }
 
