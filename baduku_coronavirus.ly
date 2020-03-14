@@ -15,6 +15,7 @@ uno = \relative c' {
 	r4 r4 r8 g a b |
 	c2.\4 e4\3 |
 	c2 g'8. f8. e8 |
+	e8\3\glissando f1\3 |
 	
 	\bar ":|." 
 }
