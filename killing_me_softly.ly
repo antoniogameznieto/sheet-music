@@ -19,10 +19,17 @@ uno = \relative c' {
 	\bar ":|." 
 }
 
+
+acordes = \chordmode {
+	\powerChords
+	a:m d:m g c a:m d g f c d:m b
+ }
+
 %--- Partitura ---%
 \score {
 	\new StaffGroup	
 	<<
+	    \new ChordNames \acordes
 		\new Staff \uno
 		\new TabStaff \uno
 	>>
