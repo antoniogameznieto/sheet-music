@@ -16,9 +16,10 @@ uno = \relative c' {
 	<d g a> <d f a\4>4. f8 g a c |                 % Dm
 	<d, g g b> b' b b4 g8 d <c e g\4>~ |           % G
 	<c e g\4>4. f8 e4 d4 |                         % C
+	\break
 	<c e a\4>8 e e e4 a8 c <d, fis a\4 b>~ |       % Am
-	<d fis a\4 b> a'4. d8 d d <d, g\4 g c>~ |      % D
-	<d g\4 g c> b'2 r8 g <c, f a\4 b>~ |           % G
+	<d fis a\4 b> a'4. d8 d d <c g d g\4>~ |      % D
+	<c g d g\4> b2 r8 g <c, f a\4 b>~ |           % G
 	<c f a\4 b> a'4. a8 a c <c, e g\4 a>~ |        % F
 	<c e g\4 a> g'2 r8 e8 <d g a\4>~ |             % C
 	<d g a\4> <d f a\4>4. f8 f e8 <d e\2 ais\4>~ | % Dm
