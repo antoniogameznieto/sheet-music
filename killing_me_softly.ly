@@ -12,7 +12,7 @@ uno = \relative c' {
 \key c \major
 \numericTimeSignature
 \time 4/4
-	<c e a\4 c>8 c' c c4 a8 e <d g a\4>~ |         % Am
+	<c e a\4 c>8 c' c c4 a8 e <d g a\4>~ |         % Am.
 	<d g a> <d f a\4>4. f8 g a c |                 % Dm
 	<d, g g b> b' b b4 g8 d <c e g\4>~ |           % G
 	<c e g\4>4. f8 e4 d4 |                         % C
