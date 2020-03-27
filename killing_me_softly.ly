@@ -22,7 +22,7 @@ uno = \relative c' {
 
 acordes = \chordmode {
 	\powerChords
-	a:m d:m g c a:m d g f c d:m b
+	a:m d:m g c a:m d g f c d:m bes
  }
 
 %--- Partitura ---%
