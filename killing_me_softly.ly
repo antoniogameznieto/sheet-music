@@ -1,3 +1,8 @@
+\header {
+  title = "Killing me Softly"
+  composer = "Roberta Flack"
+}
+
 \layout{
 	\context {
 		\TabStaff
