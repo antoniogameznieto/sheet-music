@@ -38,7 +38,7 @@ uno = \relative c' {
 }
 
 acordes = \chordmode {
-	a1:m d:m g c a:m d g f c d:m bes
+	a1:m d:m g c a:m d g f c d:m bes a
  }
 
 %--- Partitura ---%
