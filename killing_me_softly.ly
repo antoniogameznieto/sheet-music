@@ -44,7 +44,10 @@ dos = \relative c' {
 \key c \major
 \numericTimeSignature
 \time 4/4
-	e8 f g4 g4\glissando a8\2~a
+	r4 r8 e8 f g4 g4\glissando a8\2~ a4 g8 d4 g4.
+	r4 r8 a8 g f4 e8~ 
+	e f8 c2~ 
+	c4 e8 f g4 g4\glissando a8\2 g8 a4\2 b g8
 	\bar "|." 
 }
 
