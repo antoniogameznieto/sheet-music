@@ -38,6 +38,20 @@ acordes = \chordmode {
 	a1:m d:m g c a:m d g f c d:m bes a
  }
 
+
+% Estrofa
+dos = \relative c' {
+\key c \major
+\numericTimeSignature
+\time 4/4
+	e8 f g4 g4\glissando a8\2~a
+	\bar "|." 
+}
+
+acordesdos = \chordmode {
+	% a1:m d:m g c a:m d g f c d:m bes a
+ }
+
 %--- Partitura ---%
 \score {
 	\new StaffGroup	
@@ -45,5 +59,14 @@ acordes = \chordmode {
 	    \new ChordNames \acordes
 		\new Staff \uno
 		\new TabStaff \uno
+	>>
+}
+
+\score {
+	\new StaffGroup	
+	<<
+	    \new ChordNames \acordesdos
+		\new Staff \dos
+		\new TabStaff \dos
 	>>
 }
