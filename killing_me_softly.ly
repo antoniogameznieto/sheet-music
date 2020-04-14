@@ -44,17 +44,21 @@ dos = \relative c' {
 \key c \major
 \numericTimeSignature
 \time 4/4
-	r4 r8 e8 f g4\appoggiatura g4\glissando a8\2~ 
-	a4 g8 d4 g4. % La apogiatura esta mete un glissando y no deberia
+	r4 r8 e8 f g4\grace g4\glissando a8\2~ 
+	a4 g8 d4 g4. 
 	\break
 	r4 r8 a8 g f4 e8~ 
 	e4 f8 c2~ c8~ 
 	\break 
-	c4. e8 f g4\appoggiatura g4\glissando a8\2~
+	c4. e8 f g4\grace g4\glissando a8\2~
 	a4 g8 a4\2 b g8
 	\break
-	ais4\glissando c4. b a8 g a
-
+	% falta el grace del 1 y otro grace mas para alante
+	c4. b4 a8 g a\2~ 
+	a1\2
+    \break
+	r4 r8 c8 a f4 e8~ 
+	e4 d8 e4 f4.
 	\bar "|." 
 }
 
