@@ -31,7 +31,7 @@ uno = \relative c' {
 	<d g a\4> <d f a\4>4. f8 f e8 <d e\2 ais\4>~ | % Dm
   	<d e\2 ais\4> d4. d8 d4 <cis e a\4>8~ |        % Bb
 	<cis e a>1 |                                   % A
-	\bar "|." 
+	\bar "|" 
 }
 
 acordes = \chordmode {
@@ -44,22 +44,21 @@ dos = \relative c' {
 \key c \major
 \numericTimeSignature
 \time 4/4
-	r4 r8 e8 f g4\grace g4\glissando a8\2~ 
+	r4 r8 e8 f g4\grace g16\glissando a8\2~ 
 	a4 g8 d4 g4. 
-	\break
 	r4 r8 a8 g f4 e8~ 
 	e4 f8 c2~ c8~ 
 	\break 
-	c4. e8 f g4\grace g4\glissando a8\2~
+	c4. e8 f g4\grace g16\glissando a8\2~
 	a4 g8 a4\2 b g8
-	\break
-	% falta el grace del 1 y otro grace mas para alante
-	c4. b4 a8 g a\2~ 
+	\grace bes16 \glissando c4. b4 a8 g \grace g16 \glissando a8\2~
 	a1\2
     \break
 	r4 r8 c8 a f4 e8~ 
 	e4 d8 e4 f4.
-	\bar "|." 
+	r4 r8 g8 g8 g4 \grace g16 \glissando gis8~
+	gis4\2 gis8 a4 b4.
+	\bar "|" 
 }
 
 acordesdos = \chordmode {
@@ -77,8 +76,12 @@ acordesdos = \chordmode {
 }
 
 \score {
+	    \header {
+      piece = "Estrofa"
+    }
 	\new StaffGroup	
 	<<
+ 
 	    \new ChordNames \acordesdos
 		\new Staff \dos
 		\new TabStaff \dos
