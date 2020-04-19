@@ -30,7 +30,9 @@ uno = \relative c' {
 
 %--- Partitura ---%
 \score {
+\new ChordNames \acordesdos
 	\new StaffGroup	
+	
 	<<
 		\new Staff \uno
 		\new TabStaff \uno
