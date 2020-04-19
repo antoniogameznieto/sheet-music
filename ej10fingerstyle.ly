@@ -29,13 +29,15 @@ uno = \relative c' {
 }
 
 acordesdos = \chordmode {
-	a1:m d:m g c a:m d g f c d:m bes a
+	d1 d:maj7 d:7 g g:m d a2 a:7 d1 
+	%a1:m d:m g c a:m d g f c d:m bes a
  }
 %--- Partitura ---%
 \score {
 	\new StaffGroup	
 	
 	<<
+		\new ChordNames \acordesdos
 		\new Staff \uno
 		\new TabStaff \uno
 	>>
