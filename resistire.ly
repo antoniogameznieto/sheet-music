@@ -17,23 +17,23 @@ uno = \relative c' {
 \numericTimeSignature
 \time 4/4
 
-	\tuplet 4/4 {d'8 fis, d a'\4} \tuplet 4/4 {d8 fis, d a'\4}
-	\tuplet 4/4 {cis8 fis, d a'\4} \tuplet 4/4 {cis8 fis, d a'\4}
-	\tuplet 4/4 {c8 fis, d a'\4} \tuplet 4/4 {c8 fis, d a'\4}
-	\tuplet 4/4 {b g d g\4} \tuplet 4/4 {b g d g\4} 
-	\tuplet 4/4 {ais g d g\4} \tuplet 4/4 {ais g d g\4} 
-	\tuplet 4/4 {a fis d a'\4} \tuplet 4/4 {a fis d a'\4}
-	\tuplet 4/4 {a e cis a'\4} \tuplet 4/4 {cis g e\3 a\4}
-	\tuplet 4/4 {d fis, d a'\4} d2
+	b'1
+	b8 c b c b c b16 c8.
+	a1
+	a8 b a b a b a16 b8.
+	
+
 	\bar ":|." 
 }
 
 acordesdos = \chordmode {
-	d1 d:maj7 d:7 g g:m d a2 a:7 d1 
-	%a1:m d:m g c a:m d g f c d:m bes a
+	%d1 d:maj7 d:7 g g:m d a2 a:7 d1 
  }
 %--- Partitura ---%
 \score {
+ \header {
+      piece = "Intro"
+    }
 	\new StaffGroup	
 	
 	<<
