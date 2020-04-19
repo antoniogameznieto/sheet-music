@@ -47,7 +47,7 @@ dos = \relative c' {
 	r4 r8 e8 f g4\grace g16\glissando a8\2~ 
 	a4 g8 d4 g4. 
 	r4 r8 a8 g f4 e8~ 
-	e4 f8 c2~ c8~ 
+	e4 f8 c2 c8~ 
 	\break 
 	c4. e8 f g4\grace g16\glissando a8\2~
 	a4 g8 a4\2 b g8
