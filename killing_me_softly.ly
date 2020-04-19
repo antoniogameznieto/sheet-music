@@ -62,11 +62,15 @@ dos = \relative c' {
 }
 
 acordesdos = \chordmode {
+	d1:m g c f d:m g a:m a:m d:m g:7 c e:7
 	% a1:m d:m g c a:m d g f c d:m bes a
  }
 
 %--- Partitura ---%
 \score {
+ \header {
+      piece = "Melodía"
+    }
 	\new StaffGroup	
 	<<
 	    \new ChordNames \acordes
