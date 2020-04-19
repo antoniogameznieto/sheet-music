@@ -1,4 +1,9 @@
-
+\header {
+  title = "Ejercicio 10"
+  subtitle = "Fingerstyle / Arpegio"
+  subsubtile = "a"
+  tagline = ""  % removed
+}
 \layout{
 	\context {
 		\TabStaff
