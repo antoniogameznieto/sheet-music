@@ -1,6 +1,6 @@
 \header {
-  title = "Ejercicio 10"
-  subtitle = "Fingerstyle / Arpegio"
+  title = "Resistiré"
+  subtitle = "Dúo Dinámico"
   subsubtile = "a"
   tagline = ""  % removed
 }
@@ -13,7 +13,7 @@
 
 %--- Introducción de las notas ---%
 uno = \relative c' {
-\key b \minor
+\key a \minor
 \numericTimeSignature
 \time 4/4
 
