@@ -14,12 +14,17 @@
 
 %--- Introducción de las notas ---%
 uno = \relative c' {
-\key c \major
+\key g \major
 \numericTimeSignature
 \time 4/4
 	r4 r4 r8 cis d dis
   e4\3 <g e g b>8 fis g4 <g e g b>8 dis
-  e\3 fis g
+  e\3 fis g c b e,\3 g b
+  <c, e ais g\4>2 r8 a' \tuplet 3/2 { g e d }
+  e\3 e\3 r4 r8 cis d dis
+  e4 <g e g b>8 fis g4 <g e g b>8 dis
+  
+  
   % <g e' g b> fis' g
 }
 
