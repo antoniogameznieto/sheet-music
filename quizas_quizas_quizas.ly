@@ -27,8 +27,9 @@ uno = \relative c' {
 	e4. d8 c4. b8
 	a1
 
-	r
-	
+	r1 
+	\tuplet 3/2 {e'8 e e} \tuplet 3/2 {e e c} 
+	d
 	\bar "|" 
 }
 
