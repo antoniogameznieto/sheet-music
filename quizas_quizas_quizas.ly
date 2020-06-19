@@ -26,10 +26,16 @@ uno = \relative c' {
 	a4.\2 b8 c4. d8
 	e4. d8 c4. b8
 	a1
-
+	\break
 	r1 
-	\tuplet 3/2 {e'8 e e} \tuplet 3/2 {e e c} 
-	d
+	\tuplet 3/2 {e'4 e e} \tuplet 3/2 {e e c} 
+	d4. c8 b4. gis8
+	a4.\2 e2 r8 
+	\break
+	r2 r8 gis b gis
+	a4.\2 b8 c4. d8
+	e4. d8 c4. b8
+	a1
 	\bar "|" 
 }
 
