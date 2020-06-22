@@ -55,7 +55,7 @@ harmony = \chordmode {
 
 
 \score {
-    \transpose e a
+    \transpose e c'
     <<
         \new ChordNames {
             \set chordChanges=##t
