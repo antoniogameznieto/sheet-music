@@ -46,3 +46,31 @@ acordes = \chordmode {
 		\new TabStaff \uno
 	>>
 }
+
+melody = \relative {
+	\key e \minor
+	\time 4/4
+	<b e g b>8-. e'4 d8 b\2 a\2 g e |
+	bes'( a) bes( a) bes( a) bes( a) |
+	\tuplet 3/2 {g e d} e\3 e\3 r4 <b e g b>-.
+	\tuplet 3/2 {g'8 e d} e\3 e\3 r4 <g, c e bes'>-. |
+	\tuplet 3/2 {g'8 e d} e\3 e\3 r4 <a, dis fis b>8-. <g e' g b>~ |
+	<g e' g b>2 r |
+	\bar "|."
+}
+
+\score {
+	<<
+	\new Staff \melody
+	\new TabStaff \melody
+	>>
+	\layout {
+		\context {
+		  \TabStaff
+		  stringTunings = #tenor-ukulele-tuning
+		}
+	}
+	\midi {
+		\tempo 4 = 120
+	}
+}
