@@ -1,7 +1,7 @@
 \header {
-  title = "Bella Ciao"
-  subtitle = "Canción Popular Italiana"
-  subsubtile = "a"
+  title = "Tico Tico"
+  subtitle = "Zequinha de Abreu "
+  subsubtile = ""
   tagline = ""  % removed
 }
 
@@ -17,16 +17,15 @@ uno = \relative c' {
 \key c \major
 \numericTimeSignature
 \time 4/4
-	r4 r r8 e a b
-	c a r4 r8 e a b
-	c a r4 r8 e a b
-	c4 b8 a c4 b8 a
-	\break
-	e'4 e e8 e d e
-	f f r4 r8 f e d
-	f e r4 r8 e d c
-	b4 e b c
-	a2 r
+\partial 4. e8\3 dis e\3 |
+    f e4 a8 ~ a e dis e |
+    f e4 gis8 ~ gis e dis e |
+    f e d' b gis e d des |
+    c2 r8 a' aes g f a4 d8 ~ d c a f |
+    e a4 c8 ~ c c b ais |
+    b cis, dis fis a c b a |
+    b2 r |
+    \bar "|."
 }
 
 %--- Partitura ---%
@@ -40,3 +39,6 @@ uno = \relative c' {
 		\new TabStaff \uno
 	>>
 }
+
+\layout {}
+\midi {}
