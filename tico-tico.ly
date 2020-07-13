@@ -8,7 +8,7 @@
 \layout{
 	\context {
 		\TabStaff
-		stringTunings = #ukulele-tuning
+		stringTunings = #tenor-ukulele-tuning
 	}
 }
 
@@ -18,12 +18,12 @@ uno = \relative c' {
 \numericTimeSignature
 \time 4/4
 \partial 4. e8\3 dis e\3 |
-    f e4 a8 ~ a e dis e |
-    f e4 gis8 ~ gis e dis e |
-    f e d' b gis e d des |
-    c2 r8 a' aes g f a4 d8 ~ d c a f |
-    e a4 c8 ~ c c b ais |
-    b cis, dis fis a c b a |
+    f\3 e4\3 a8\2 ~ a e\3 dis\3 e\3 |
+    f\3 e4\3 gis8 ~ gis e\3 dis\3 e\3 |
+    f\3 e\3 d' b gis e\3 d des\4 | % aqui la ultima nota deberia ser un 6 en la cuerda cuatro pero no tira
+    c2\4 r8 a'\2 aes g f\3 a4\2 d8 ~ d c\1 a\2 f\3 | % la primera debería ser un 5 en la cuerda cuatro pero no
+    e\3 a4\2 c8 ~ c c b ais |
+    b cis,\4 dis fis\2 a c b a | % aqui me faltan tambien el cis
     b2 r |
     \bar "|."
 }
@@ -39,6 +39,3 @@ uno = \relative c' {
 		\new TabStaff \uno
 	>>
 }
-
-\layout {}
-\midi {}
