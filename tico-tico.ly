@@ -30,6 +30,7 @@ uno = \relative c' {
 
 %--- Partitura ---%
 \score {
+\midi{}
  \header {
       piece = ""
     }
@@ -38,4 +39,5 @@ uno = \relative c' {
 		\new Staff \uno
 		\new TabStaff \uno
 	>>
+  
 }
