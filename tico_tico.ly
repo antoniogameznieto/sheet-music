@@ -25,7 +25,7 @@ g b,\4 d f b,\4 d f g a\2 r e8 r16 c' c c
 c b b b r a a a a r f f r b b b
 b g g b a f f a g4 r16 b a gis
 g c,\3 e\3 g c,\3 e\3 g gis a\2 r f8 r16 b a gis
-g b,\4 d f b,\4 d f g a\2 r e8 r16 c'\2 b\2 ais\2 %--- ojo el ultimo silencio me lo inventé
+g b,\4 d f b,\4 d f g a\2 r e8 r16 c'\2 b\2 ais\2
 a\2 gis a\2 b\2 d c\2 b\2 c\2 e g,\3 c\2 e g r f e 
 d c\2 b\2 a\2 g\3 f\3 e\3 d\4 c8\4 g\4 c4\4
 \bar "|."
