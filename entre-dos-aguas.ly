@@ -14,8 +14,9 @@ uno = \relative c' {
 r2. r8 g'
 g8 (fis) fis (e) e d4 d8~ 
 d c4 c8 d e fis g
-a g g (fis) fis4 fis8 fis
-
+a g g (fis) fis4 fis8 fis~ 
+fis e d4 r8 d e fis
+g fis fis e e4 e8 \acciaccatura fis e
 }
 
 %--- Partitura ---%
