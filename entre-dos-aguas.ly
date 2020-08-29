@@ -14,6 +14,7 @@ uno = \relative c' {
 r2. r8 g'
 g8 (fis) fis (e) e d4 d8~ 
 d c4 c8 d e fis g
+a g g (fis) fis4 fis8 fis
 
 }
 
