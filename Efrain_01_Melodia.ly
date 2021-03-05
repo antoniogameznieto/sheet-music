@@ -1,6 +1,6 @@
 \header {
-  title = "Bella Ciao"
-  subtitle = "Canción Popular Italiana"
+  title = "Efrain Silva"
+  subtitle = "Ejercicio Melodía 01"
   subsubtile = "a"
   tagline = ""  % removed
 }
@@ -14,19 +14,18 @@
 
 %--- Introducción de las notas ---%
 uno = \relative c' {
-\key c \major
+\key d \major
 \numericTimeSignature
-\time 4/4
-	r4 r r8 e a b
-	c a r4 r8 e a b
-	c a r4 r8 e a b
-	c4 b8 a c4 b8 a
-	\break
-	e'4 e e8 e d e
-	f f r4 r8 f e d
-	f e r4 r8 e d c
-	b4 e b c
-	a2 r
+\numericTimeSignature
+\time 3/4
+	r2 fis4 
+	fis2 e4
+	e2 d4
+	d2 cis4
+	cis2 b4\4
+	b2 a4
+	b2 g4
+
 }
 
 %--- Partitura ---%
