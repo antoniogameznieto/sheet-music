@@ -18,7 +18,7 @@ uno = \relative c' {
 \numericTimeSignature
 \numericTimeSignature
 \time 3/4
-	r2 fis4 
+	r2 fis4 \bar ".|:"
 	fis2 e4
 	e2 d4
 	d2 cis4
@@ -50,7 +50,7 @@ uno = \relative c' {
 	fis2.
 	e2.
 	dis2.~ %--- Efrain dice que d2 tiene que ser 3, pero me sale dos en lilypond, asi que meto un sostenido ---%
-	dis2 fis4
+	dis2 fis4 \bar ":|."
 }
 
 %--- Partitura ---%
