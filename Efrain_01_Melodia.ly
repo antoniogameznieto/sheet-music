@@ -4,14 +4,6 @@
   subsubtile = "a"
   tagline = ""  % removed
 }
-
-\layout{
-	\context {
-		\TabStaff
-		stringTunings = #tenor-ukulele-tuning
-	}
-}
-
 %--- Introducción de las notas ---%
 uno = \relative c' {
 \key d \major
@@ -38,7 +30,7 @@ uno = \relative c' {
 	a2 g4
 	g2 fis4
 	fis2 e4
-	dis2 e4 %--- Efrain dice que d2 tiene que ser 3, pero me sale dos en lilypond, asi que meto un sostenido ---%
+	d2 e4 
 	fis2 g4
 	g2 fis4
 	e2.~
@@ -49,8 +41,8 @@ uno = \relative c' {
 	d2 e4
 	fis2.
 	e2.
-	dis2.~ %--- Efrain dice que d2 tiene que ser 3, pero me sale dos en lilypond, asi que meto un sostenido ---%
-	dis2 fis4 \bar ":|."
+	d2.~ 
+	d2 fis4 \bar ":|."
 }
 
 %--- Partitura ---%
@@ -63,4 +55,13 @@ uno = \relative c' {
 		\new Staff \uno
 		\new TabStaff \uno
 	>>
+\layout{
+	\context {
+		\TabStaff
+		stringTunings = #tenor-ukulele-tuning
+	}
+}
+\midi{
+	\tempo 4 = 120
+}
 }
