@@ -26,7 +26,7 @@ uno = \relative c' {
   e\3 fis g c b g b e
   <c\4 g\3 ais dis>1
   \bar ":|."
-  e,8\3 e2\3 r8 r4
+  e,8\3 e2\3 r8 r4 \bar "|."
 }
 
 acordes = \chordmode {
