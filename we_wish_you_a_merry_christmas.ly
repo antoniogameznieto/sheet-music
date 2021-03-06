@@ -7,7 +7,7 @@
 \layout{
 	\context {
 		\TabStaff
-		stringTunings = #ukulele-tuning
+		stringTunings = #tenor-ukulele-tuning
 	}
 }
 
@@ -17,7 +17,9 @@ uno = \relative c' {
 \numericTimeSignature
 \numericTimeSignature
 \time 3/4
-	
+	r2 a'4\2 
+	<d, fis a d> d'8 e d cis
+	<d, g b>
 	
 }
 
