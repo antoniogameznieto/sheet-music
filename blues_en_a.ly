@@ -22,7 +22,7 @@ uno = \relative c' {
 
 acordes = 
   \chordmode {
-    a1:7 | e:7 | a1:7 | \repeat percent 3 |
+    a1:7 | e:7 | a:7 ~ | a:7 ~ | a:7  
 }
 
 %--- Partitura ---%
