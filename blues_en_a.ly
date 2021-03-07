@@ -2,7 +2,7 @@
   title = "Blues en A"
   subtitle = ""
   subsubtile = "a"
-  tagline = ""  % removed
+  tagline = ##f  % removed
 }
 %--- Introducción de las notas ---%
 uno = \relative c' {
@@ -20,13 +20,19 @@ uno = \relative c' {
 <a fis c g>16~ <a fis c a> <a fis c a>8 <a fis c a> <a fis c a> <c\1 fis,\2 c\3 a\4> <c\1 fis,\2 c\3 a\4> <a fis c a> <a fis c a>
 }
 
+acordes = 
+  \chordmode {
+    a1:7 | e:7 | a1:7 | \repeat percent 3 |
+}
+
 %--- Partitura ---%
 \score {
 	\header {
     	piece = ""
     }
 	\new StaffGroup	
-	<<
+	<<	
+		\new ChordNames \acordes
 		\new Staff \uno
 		\new TabStaff \uno
 	>>
