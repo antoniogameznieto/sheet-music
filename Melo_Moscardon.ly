@@ -1,48 +1,25 @@
 \header {
-  title = "Efrain Silva"
-  subtitle = "Ejercicio Melodía 01"
-  subsubtile = "a"
+  title = "Ejercicio Sobre Melo Moscardón"
+  subtitle = ""
   tagline = ""  % removed
 }
 %--- Introducción de las notas ---%
 uno = \relative c' {
-\key d \major
+\key c \major
 \numericTimeSignature
-\numericTimeSignature
-\time 3/4
-	r2 fis4 \bar ".|:"
-	fis2 e4
-	e2 d4
-	d2 cis4
-	cis2 b4
-	b2 a4
-	a2 g4
-	g2.~ 
-	g2 g'4
-	g2 fis4
-	fis2 e4
-	e2 d4
-	d2 cis4
-	cis2.
-	cis4 d4 e4
-	fis2.~
-	fis2 a4
-	a2 g4
-	g2 fis4
-	fis2 e4
-	d2 e4 
-	fis2 g4
-	g2 fis4
-	e2.~
-	e2 e4
-	e2 d4
-	d2 e4
-	e2 d4 
-	d2 e4
-	fis2.
-	e2.
-	d2.~ 
-	d2 fis4 \bar ":|."
+\time 2/4
+	e16\3 dis d\4 cis\4 c\4 f\3 e\3 dis
+	e16\3 dis d\4 cis\4 c\4 cis\4  d\4 dis 
+	e16\3 dis d\4 cis\4 c\4 f\3 e\3 dis
+	e16\3 dis d\4 cis\4 c\4 cis\4  d\4 dis \break
+	a'\2 gis\2 g\3 fis\3 f\3 ais\2 a\2 gis\2
+	a\2 gis\2 g\3 fis\3 f\3 fis\3 g\3 gis\2
+	a\2 gis\2 g\3 fis\3 f\3 ais\2 a\2 gis\2
+	a\2 gis\2 g\3 fis\3 f\3 fis\3 g\3 gis\2\break
+	d'\1 cis\1 c\2 b\2 ais\2 dis\1 d\1 cis\1 
+	d\1 cis\1 c\2 b\2 ais\2 b\2 c\2 cis\1
+	d\1 cis\1 c\2 b\2 ais\2 dis\1 d\1 cis\1 
+	d\1 cis\1 c\2 b\2 ais\2 b\2 c\2 cis\1
 }
 
 %--- Partitura ---%
