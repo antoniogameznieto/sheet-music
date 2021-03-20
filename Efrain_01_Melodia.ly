@@ -26,7 +26,7 @@ uno = \relative c' {
 	cis2.
 	cis4 d4 e4
 	fis2.~
-	fis2 a4
+	fis2 a4 \bar "|."
 	a2 g4
 	g2 fis4
 	fis2 e4
