@@ -10,7 +10,7 @@ uno = \relative c' {
 \numericTimeSignature
 \numericTimeSignature
 \time 3/4
-	r2 fis4 \bar ".|:"
+	\partial 4 fis4 \bar ".|:"
 	\repeat volta 3 {
 	fis2 e4
 	e2 d4
@@ -19,7 +19,7 @@ uno = \relative c' {
 	b2 a4
 	a2 g4
 	g2.~ 
-	g2 g'4\break
+	g2 g'4 \break
 	g2 fis4
 	fis2 e4
 	e2 d4
@@ -28,10 +28,9 @@ uno = \relative c' {
 	cis4 d4 e4
 	fis2.~
 	fis2 a4 \bar "||"
-  \mark \markup { \musicglyph #"scripts.segno" }
+  	\mark \markup { \musicglyph #"scripts.segno" }
 	a2 g4
-	g2 fis4
-	\break
+	g2 fis4 \break
 	fis2 e4
 	d2 e4 
 	fis2 g4
