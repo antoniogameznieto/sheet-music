@@ -41,7 +41,7 @@ tres = \relative c' {
 	bes d f a f d 
 	bes d f a f d 
 	a cis e a e cis a cis e
-	a,( ais b)\bar ":|." 
+	a,( ais b)-"D.C"\bar ":|." 
 
 }
 
