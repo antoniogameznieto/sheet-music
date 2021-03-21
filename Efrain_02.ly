@@ -21,7 +21,9 @@ dos = \relative c' {
 \key c \major
 \numericTimeSignature
 \time 6/4
-	c4\4 <e g a>8 c4\4 <e g a>8 b4 <ees ges a>8 b4 <ees ges a>8
+	c4\4 \rightHandFinger #1
+	<e \rightHandFinger #2 g \rightHandFinger #3 a \rightHandFinger #4 >8 
+	c4\4 <e g a>8 b4 <ees ges a>8 b4 <ees ges a>8
 	bes4 <d f a>8 bes4 <d f a>8 a4 <cis e a>8 a4 <cis e a>8 \bar ":|." 
 }
 
