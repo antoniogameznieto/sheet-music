@@ -9,7 +9,7 @@ uno = \relative c' {
 \key c \major
 \numericTimeSignature
 \time 4/4
-	<c e g a>2 
+	<c  \rightHandFinger #1 e  \rightHandFinger #2 g  \rightHandFinger #3 a  \rightHandFinger #4 >2 
 	<b ees ges a>
 	<bes d f a>
 	<a cis e a> \bar ":|.|:"
@@ -30,11 +30,11 @@ tres = \relative c' {
 \numericTimeSignature
 \time 6/4
 	c16\4 \rightHandFinger #1
-	e\3 
-	g 
-	a 
-	g 
-	e\3
+	e\3 \rightHandFinger #2
+	g  \rightHandFinger #3
+	a  \rightHandFinger #4
+	g  \rightHandFinger #3
+	e\3  \rightHandFinger #2
 	  c\4 e\3 g a g e\3
 	b ees ges a ges ees
 	b ees ges a ges ees
