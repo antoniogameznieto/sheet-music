@@ -46,8 +46,8 @@ uno = \relative c' {
 	}
 	\alternative{
 	{d2.~ d2 fis4 \bar ":|."}
-	{d2.~ d2 e4 \bar ":|."}
-	{d2. e2. fis2. \bar ":|."}
+	{d2.~ d2 e4 -"al signo."\bar ":|."}
+	{d2. e2. fis2.\fermata \bar ":|."}
 	}
 	
 }
