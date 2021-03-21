@@ -13,7 +13,7 @@ uno = \relative c' {
 	<b ees ges a>
 	<bes d f a>
 	<a cis e a> \bar ":|.|:"
-	<c e g a>4 <c e g a> <b ees ges a> <b ees ges a>
+	<c e g a>4^"Staccato" <c e g a> <b ees ges a> <b ees ges a>
 	<bes d f a> <bes d f a> <a cis e a> <a cis e a> \bar ":|." 
 }
 
